@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MoodRadar - Your Stress Management Companion</title>
+    <style>
+      /* Grundlegendes CSS-Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #f5f5f5;
+        color: #333;
+      }
+      header {
+        /* Moderner, leichter blau-lila Farbverlauf */
+        background: linear-gradient(90deg, #a18cd1, #35273d);
+        padding: 1rem 0;
+      }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav a {
+        color: #fff; /* Navigationstexte bleiben weiß */
+        text-decoration: none;
+        margin-left: 1rem;
+        font-weight: bold;
+      }
+      .logo h2 {
+        color: #fff; /* Logo in der Navbar bleibt weiß */
+      }
+      .hero {
+        background: url("hero-image.jpg") no-repeat center center/cover;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        color: #000; /* Hero-Text in Schwarz */
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      section {
+        padding: 2rem 0;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        /* Überschriften mit Hintergrundgradient */
+        background: linear-gradient(90deg, #a18cd1, #3f438fb1);
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 5px;
+      }
+      .about,
+      .privacy,
+      .contact {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      /* Responsive */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+        }
+        nav a {
+          margin: 0.5rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h2>MoodRadar</h2>
+          </div>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#contact">Get in Touch</a>
+            <a href="#privacy">Privacy</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to MoodRadar</h1>
+        <p>
+          Your stress management companion. Discover insights into your daily
+          stress and unlock a more balanced life.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About MoodRadar</h2>
+        <div class="about">
+          <p>
+            MoodRadar is a health app designed to help you understand and manage
+            your personal stress levels. Take our quick test three times a day –
+            in the morning, at midday, and in the evening – to track your stress
+            trends for the current day, the past 7 days, and the last 30 days.
+          </p>
+          <p>
+            Our test comprises 7 questions that adjust based on the time of day,
+            followed by a simple selfie. Using advanced Face API technology, we
+            calculate your stress level based on your responses and facial cues.
+            Please note that the resulting stress level is an approximation, not
+            a 100% guarantee.
+          </p>
+          <p>
+            Additionally, MoodRadar offers a variety of guided exercises to help
+            you reduce stress and relax. We continuously work to improve our
+            service so that you can achieve a balanced, stress-free life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in Touch section vor Privacy Policy -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch with Us</h2>
+        <div class="contact">
+          <p>
+            We value your feedback and are here to help. For any questions,
+            suggestions, or improvements, please email us directly at
+            <a href="mailto:support@mood-radar.com">support@mood-radar.com</a>.
+          </p>
+          <p>We will get back to you as soon as possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <h2 class="section-title">Privacy Policy</h2>
+        <div class="privacy">
+          <p><strong>Effective Date:</strong> 03/10/2025</p>
+
+          <h3>1. Introduction</h3>
+          <p>
+            We at moodRadar (hereinafter "we" or "us") take the protection of
+            your personal data very seriously. This Privacy Policy informs you
+            about how we collect, process, and safeguard your personal data when
+            you use our mobile application moodWave ("the App").
+          </p>
+          <p>
+            The processing of your data is carried out in accordance with the
+            applicable legal requirements, in particular the General Data
+            Protection Regulation (GDPR).
+          </p>
+
+          <h3>2. Data Controller</h3>
+          <p>The data controller responsible for data processing is:</p>
+          <p>
+            <strong>moodRadar</strong><br />
+            Email:
+            <a href="mailto:support@mood-radar.com">support@mood-radar.com</a>
+          </p>
+
+          <h3>3. Processing of Personal Data</h3>
+          <h4>3.1 Registration and User Account</h4>
+          <p>
+            During registration via Apple ID, the following data is collected:
+          </p>
+          <ul>
+            <li>Apple ID</li>
+            <li>Email address</li>
+          </ul>
+
+          <h4>3.2 User Data</h4>
+          <p>
+            <strong>Account Information:</strong> First name, last name, email,
+            bio (optional)<br />
+            <strong>Stress Data:</strong> Stress level, time of day of
+            measurement, date and time of measurement<br />
+            <strong>Usage Data:</strong> Interactions with the App, completed
+            exercises, test results
+          </p>
+          <p>
+            <strong>Purpose of Processing:</strong><br />
+            - Providing personalized stress analyses<br />
+            - Optimizing the user experience<br />
+            - Communicating with users (e.g., notifications about exercises or
+            App updates)
+          </p>
+          <p>
+            The legal basis for processing is Article 6(1)(b) GDPR (performance
+            of a contract) and Article 6(1)(a) GDPR (consent).
+          </p>
+
+          <h3>4. Data Storage and Security</h3>
+          <p>
+            We store personal data only as long as necessary to fulfill the
+            purposes outlined in this Privacy Policy or as required by law. Your
+            data is transmitted using encryption and stored in a secure cloud
+            database.
+          </p>
+
+          <h3>5. Sharing and Use of Third-Party Services</h3>
+          <h4>5.1 Sharing with Third Parties</h4>
+          <p>
+            We use Google Cloud services for storing and processing data as well
+            as for facial recognition (Face API). In doing so, data may be
+            transferred to countries outside the EU. Google guarantees an
+            adequate level of data protection through appropriate
+            certifications. For more information, please refer to
+            <a href="https://policies.google.com/privacy" target="_blank"
+              >Google's Privacy Policy</a
+            >.
+          </p>
+          <h4>5.2 Use of Third-Party Services</h4>
+          <p>
+            Our App uses the following services:<br />
+            <strong>Apple:</strong> Login via Apple ID. For more information,
+            please refer to
+            <a href="https://www.apple.com/legal/privacy/" target="_blank"
+              >Apple's Privacy Policy</a
+            >.<br />
+            <strong>Google Cloud:</strong> For data storage and use of the Face
+            API for image analysis.
+          </p>
+
+          <h3>6. Your Rights</h3>
+          <p>Under the GDPR, you have the following rights:</p>
+          <ul>
+            <li>
+              <strong>Access:</strong> The right to obtain confirmation about
+              whether your personal data is being processed and access that data
+              (Article 15 GDPR)
+            </li>
+            <li>
+              <strong>Rectification:</strong> The right to have inaccurate data
+              corrected (Article 16 GDPR)
+            </li>
+            <li>
+              <strong>Erasure:</strong> The right to have your data deleted
+              (Article 17 GDPR)
+            </li>
+            <li>
+              <strong>Restriction:</strong> The right to restrict processing of
+              your data (Article 18 GDPR)
+            </li>
+            <li>
+              <strong>Data Portability:</strong> The right to receive your data
+              in a structured, commonly used, and machine-readable format
+              (Article 20 GDPR)
+            </li>
+            <li>
+              <strong>Withdrawal:</strong> The right to withdraw your consent at
+              any time (Article 7(3) GDPR)
+            </li>
+            <li>
+              <strong>Complaint:</strong> The right to lodge a complaint with a
+              data protection supervisory authority (Article 77 GDPR)
+            </li>
+          </ul>
+
+          <h3>7. Right to Withdraw Consent</h3>
+          <p>
+            You may withdraw your consent for data processing at any time.
+            Please contact us at the email address provided above to exercise
+            this right.
+          </p>
+
+          <h3>8. Changes to the Privacy Policy</h3>
+          <p>
+            We reserve the right to modify this Privacy Policy at any time. Any
+            changes will be published in the App and become effective upon
+            publication.
+          </p>
+
+          <h3>9. Contact</h3>
+          <p>
+            If you have any questions or concerns regarding data protection,
+            please contact us at:<br />
+            <strong>Email:</strong>
+            <a href="mailto:support@mood-radar.com">support@mood-radar.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 MoodRadar. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
