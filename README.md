@@ -13,7 +13,7 @@ MoodRadar is your ultimate stress management companion – designed to help you 
 
 Ready to take control of your stress? Download MoodRadar from the App Store and start your journey toward a more balanced life!
 
-[Download MoodRadar on the App Store](https://www.apple.com/app-store/)
+https://apps.apple.com/de/app/moodradar/id6743164009
 
 ---
 
